@@ -26,7 +26,7 @@ export default function Contact() {
             </div>
             <div>
               <strong>Location: </strong>
-              <span>BRAC University, Dhaka, Bangladesh</span>
+              <span>Block - A, Flat 2A, House, 21 Road No. 1, Dhaka 1212</span>
             </div>
           </div>
         </div>
