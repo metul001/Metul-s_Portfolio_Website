@@ -1,39 +1,19 @@
 [
   {
     "id": "react",
-    "name": "React",
+    "name": "React.js",
     "category": "Frontend",
-    "description": "A component-based JavaScript library for building modern and interactive user interfaces.",
+    "description": "Component-based JavaScript library for building responsive, high-performance user interfaces and single-page applications.",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": "vue",
-    "name": "Vue.js",
-    "category": "Frontend",
-    "description": "A friendly and flexible JavaScript framework for creating responsive web interfaces.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-    "rating": 4.8,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Versatile"
-  },
-  {
-    "id": "svelte",
-    "name": "Svelte",
-    "category": "Frontend",
-    "description": "A modern framework that moves much of the work to build time for fast web applications.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
-    "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Fast"
+    "badge": "Core Frontend"
   },
   {
     "id": "nextjs",
     "name": "Next.js",
     "category": "Frontend",
-    "description": "A React framework for building full-stack applications with routing and server rendering.",
+    "description": "React framework for production providing server-side rendering, routing, and SEO-optimized web applications.",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
@@ -43,80 +23,100 @@
     "id": "nodejs",
     "name": "Node.js",
     "category": "Backend",
-    "description": "A JavaScript runtime that lets developers build fast servers and backend applications.",
+    "description": "Asynchronous JavaScript runtime for building scalable server-side systems and network applications.",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Standard"
+    "badge": "Core Backend"
   },
   {
-    "id": "postgresql",
-    "name": "PostgreSQL",
-    "category": "Database",
-    "description": "A reliable open-source relational database used for structured and connected data.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    "rating": 4.9,
-    "difficulty": "Intermediate",
-    "badge": "Top SQL"
-  },
-  {
-    "id": "redis",
-    "name": "Redis",
-    "category": "Database",
-    "description": "An in-memory data store commonly used for caching, sessions, queues, and fast lookups.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    "id": "express",
+    "name": "Express.js",
+    "category": "Backend",
+    "description": "Minimal and flexible Node.js web application framework providing robust features for REST APIs.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Cache"
+    "badge": "REST APIs"
   },
   {
-    "id": "javascript",
-    "name": "JavaScript",
-    "category": "Language",
-    "description": "The main programming language of the web for adding logic and interactivity to websites.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "Document-oriented NoSQL database paired with Mongoose ODM for flexible schema modeling and high performance.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Ubiquitous"
-  },
-  {
-    "id": "typescript",
-    "name": "TypeScript",
-    "category": "Language",
-    "description": "A typed version of JavaScript that can make larger projects easier to understand and maintain.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    "rating": 4.9,
-    "difficulty": "Intermediate",
-    "badge": "Essential"
-  },
-  {
-    "id": "java",
-    "name": "Java",
-    "category": "Language",
-    "description": "A widely used object-oriented language for backend systems, tools, and enterprise applications.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-    "rating": 4.6,
-    "difficulty": "Intermediate",
-    "badge": "Robust"
+    "badge": "NoSQL Database"
   },
   {
     "id": "tailwindcss",
     "name": "Tailwind CSS",
     "category": "Styling",
-    "description": "A utility-first CSS framework that helps developers build custom interfaces quickly.",
+    "description": "Utility-first CSS framework for building modern, responsive, and custom UI components rapidly.",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Modern"
+    "badge": "Modern Styling"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "Typed superset of JavaScript that enhances code quality, maintainability, and enterprise developer tooling.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Type Safe"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript (ES6+)",
+    "category": "Language",
+    "description": "The fundamental programming language of modern web engineering, DOM manipulation, and asynchronous programming.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Web Standard"
+  },
+  {
+    "id": "htmlcss",
+    "name": "HTML5 & CSS3",
+    "category": "Frontend",
+    "description": "Semantic web standards, modern layout techniques (Flexbox, Grid), and accessible responsive structure.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fundamentals"
+  },
+  {
+    "id": "git",
+    "name": "Git & GitHub",
+    "category": "DevOps",
+    "description": "Distributed version control system and collaboration platform for tracking codebase changes and team workflows.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Collaboration"
   },
   {
     "id": "docker",
     "name": "Docker",
     "category": "DevOps",
-    "description": "A container platform for packaging applications and running them consistently in different places.",
+    "description": "Container platform for packaging applications and runtime environments consistently for deployment.",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-    "rating": 4.9,
+    "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Containers"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "Reliable relational database system for structured schema design, ACID transactions, and complex queries.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Relational SQL"
   }
 ]

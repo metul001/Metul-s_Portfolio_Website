@@ -5,12 +5,14 @@ A responsive personal portfolio built with React, TypeScript, Vite, CSS, React T
 ## About
 
 - **Name:** Mahir Faysal Metul
-- **University:** BRAC University
-- **Field:** Computer Science and Engineering
-- **Experience:** Web Design & Development Intern at Bayshore Communications
+- **University:** BRAC University (Computer Science & Engineering)
+- **Role & Focus:** MERN Stack Developer (MongoDB, Express.js, React.js, Node.js)
+- **Experience:** MERN Stack & Web Development Intern at Bayshore Communications
+- **Schedule / Office Hours:** Sunday to Thursday (10:00 AM – 6:00 PM)
+- **Email:** mfaysalmetul@gmail.com
+- **HR / Reference:** hr.bayshorecommunication@gmail.com
 - **GitHub:** https://github.com/metul001
 - **LinkedIn:** https://www.linkedin.com/in/mahir-faysal-metul-2b2380308/
-- **Email:** mfaysalmetul@gmail.com
 
 ## Portfolio Sections
 

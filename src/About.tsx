@@ -4,27 +4,41 @@ export default function About() {
       <div className="container two-column-section">
         <div>
           <p className="section-kicker">About Me</p>
-          <h2 className="portfolio-title">I enjoy learning by building real projects.</h2>
+          <h2 className="portfolio-title">Building modern web applications with focus and discipline.</h2>
         </div>
 
         <div className="about-copy">
           <p>
             I am Mahir Faysal Metul, a Computer Science and Engineering student at
-            BRAC University. My main interest is web design and development, and I
-            enjoy creating clean, responsive, and useful web experiences.
+            BRAC University and a MERN Stack Web Development Intern at Bayshore
+            Communications (Sunday to Thursday, 10:00 AM – 6:00 PM).
           </p>
           <p>
-            I have also worked as a web design and development intern at Bayshore
-            Communications. I like keeping my code simple, improving through practice,
-            and exploring new technologies through academic and personal projects.
+            My engineering foundation is built around modern web standards: HTML5, CSS3,
+            Tailwind CSS, and JavaScript (ES6+), advancing into full-stack development with
+            React.js, Next.js, Node.js, Express.js, and MongoDB with Mongoose. I focus on clean
+            client-server architecture, modular RESTful APIs, secure authentication systems,
+            and reliable database schema design.
+          </p>
+          <p>
+            In addition to core programming, I actively leverage modern AI-assisted software
+            development workflows (ChatGPT, Cursor, Claude Code) to accelerate prototyping,
+            streamline debugging, enforce code quality, and build production-ready applications.
           </p>
 
           <div className="about-tags">
-            <span>Web Development</span>
-            <span>React</span>
-            <span>JavaScript</span>
+            <span>MERN Stack</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>Next.js</span>
+            <span>Tailwind CSS</span>
             <span>TypeScript</span>
-            <span>Problem Solving</span>
+            <span>REST APIs</span>
+            <span>BetterAuth & Security</span>
+            <span>Stripe & SSLCommerz</span>
+            <span>AI-Assisted Engineering</span>
           </div>
         </div>
       </div>

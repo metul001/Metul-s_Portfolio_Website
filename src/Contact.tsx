@@ -3,15 +3,31 @@ export default function Contact() {
     <section className="portfolio-section contact-section" id="contact">
       <div className="container contact-card">
         <div>
-          <p className="section-kicker">Contact</p>
+          <p className="section-kicker">Contact & Availability</p>
           <h2>Let&apos;s connect.</h2>
           <p>
-            I am interested in web development, software projects, internship opportunities,
-            and collaborative work. Feel free to contact me by email or connect with me online.
+            I am available for software engineering opportunities, full-stack MERN development,
+            internships, and collaborative projects. Feel free to reach out directly via email
+            or connect online.
           </p>
+
           <div className="contact-details">
-            <a href="mailto:mfaysalmetul@gmail.com">mfaysalmetul@gmail.com</a>
-            <span>BRAC University, Bangladesh</span>
+            <div>
+              <strong>Personal Email: </strong>
+              <a href="mailto:mfaysalmetul@gmail.com">mfaysalmetul@gmail.com</a>
+            </div>
+            <div>
+              <strong>Internship / Office Reference: </strong>
+              <a href="mailto:hr.bayshorecommunication@gmail.com">hr.bayshorecommunication@gmail.com</a>
+            </div>
+            <div>
+              <strong>Schedule & Office Hours: </strong>
+              <span>Sunday to Thursday, 10:00 AM – 6:00 PM</span>
+            </div>
+            <div>
+              <strong>Location: </strong>
+              <span>BRAC University, Dhaka, Bangladesh</span>
+            </div>
           </div>
         </div>
 

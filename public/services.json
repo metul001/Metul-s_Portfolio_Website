@@ -1,97 +1,97 @@
 [
   {
     "id": 1,
-    "title": "Full-Stack Web Development",
-    "slug": "full-stack-web-development",
-    "description": "End-to-end web applications crafted with modern React/Next.js frontends and robust Node.js/Express & MySQL backends. Optimized for lightning performance and responsive mobile-first UX.",
+    "title": "Full-Stack MERN Development",
+    "slug": "full-stack-mern-development",
+    "description": "End-to-end full-stack web applications built with MongoDB, Express.js, React.js, and Node.js. Clean client-server architecture with state management, form validation, and responsive mobile-first UI.",
     "icon_name": "Code",
     "features": [
-      "Custom Single Page Applications (SPA)",
-      "Server-Side Rendering (SSR) & Next.js",
-      "Interactive State Management",
-      "Clean Modular Code Architecture"
+      "MERN Stack (MongoDB, Express, React, Node.js)",
+      "Next.js & Server-Side Rendering (SSR)",
+      "Component-Based Modular Architecture",
+      "TypeScript & Tailwind CSS Integration"
     ],
-    "badge": "Most Popular",
+    "badge": "Core Stack",
     "is_visible": 1,
     "display_order": 1
   },
   {
     "id": 2,
-    "title": "Custom RESTful & GraphQL APIs",
-    "slug": "custom-api-development",
-    "description": "Design and implementation of secure, high-throughput REST and GraphQL APIs with JWT authentication, role-based authorization, rate limiting, and comprehensive endpoint documentation.",
+    "title": "RESTful API & Backend Engineering",
+    "slug": "restful-api-backend-engineering",
+    "description": "Developing robust, modular REST APIs with Node.js and Express.js, featuring comprehensive middleware pipelines, standardized error handling, data validation, and third-party API integrations.",
     "icon_name": "Server",
     "features": [
-      "Secure Token & JWT Authentication",
-      "CRUD Operations & Business Logic",
-      "Third-Party API Integrations",
-      "Postman & OpenAPI Documentation"
+      "Modular Express.js Architecture",
+      "Custom Middleware & Error Handling",
+      "API Integration & Endpoint Testing",
+      "CRUD Operations & Business Logic"
     ],
-    "badge": "Core Backend",
+    "badge": "Backend",
     "is_visible": 1,
     "display_order": 2
   },
   {
     "id": 3,
-    "title": "Database Architecture & MySQL Optimization",
-    "slug": "database-architecture-mysql",
-    "description": "Relational database schema design (MySQL / MariaDB / PostgreSQL), normalization, indexing strategies, complex SQL queries, migrations, and automated backups.",
+    "title": "Database Architecture & MongoDB",
+    "slug": "database-architecture-mongodb",
+    "description": "Document schema design, relationship modeling, and database management with MongoDB and Mongoose ODM. Optimized queries, data validation rules, and indexing strategies.",
     "icon_name": "Database",
     "features": [
-      "Relational Schema Modeling (ERDs)",
-      "Query Indexing & Query Tuning",
-      "Data Integrity & Foreign Constraints",
-      "Connection Pooling & Caching"
+      "MongoDB & Mongoose (ODM) Modeling",
+      "Schema Design & Relationship Mapping",
+      "Data Validation & Indexing",
+      "Safe CRUD Operations & Aggregation"
     ],
-    "badge": "Data Layer",
+    "badge": "Database",
     "is_visible": 1,
     "display_order": 3
   },
   {
     "id": 4,
-    "title": "Modern UI/UX & Responsive Design",
-    "slug": "ui-ux-responsive-design",
-    "description": "Translating Figma & Penpot designs into pixel-perfect, accessible, and responsive user interfaces with fluid animations, micro-interactions, and harmonic color themes.",
+    "title": "UI Design Systems & Modern Frontend",
+    "slug": "ui-design-systems-frontend",
+    "description": "Crafting accessible, responsive web interfaces using React.js, Tailwind CSS, ShadCN UI, and Hero UI. Translating design requirements into pixel-perfect reusable component libraries.",
     "icon_name": "Layout",
     "features": [
+      "Tailwind CSS, ShadCN UI & Hero UI",
       "Mobile-First Responsive Layouts",
-      "Interactive Micro-Animations",
-      "Accessible HTML5 & Modern CSS3",
-      "Dark / Light Theme Integration"
+      "Reusable Component Design System",
+      "Accessible & Semantic HTML5/CSS3"
     ],
-    "badge": "Design & Code",
+    "badge": "UI / UX",
     "is_visible": 1,
     "display_order": 4
   },
   {
     "id": 5,
-    "title": "Cloud Deployment & DevOps Setup",
-    "slug": "cloud-deployment-devops",
-    "description": "Containerizing full-stack apps with Docker, configuring cloud environments (Vercel, Render, AWS, VPS), and setting up continuous deployment pipelines with Git & GitHub Actions.",
+    "title": "Authentication, Security & Payments",
+    "slug": "auth-security-payments",
+    "description": "Implementing secure user authentication, session management, and role-based access control (RBAC), alongside seamless payment gateway integrations with Stripe and SSLCommerz.",
     "icon_name": "Cloud",
     "features": [
-      "Docker Containerization",
-      "Vercel / Netlify / Render Deployments",
-      "CI/CD GitHub Actions Automation",
-      "Environment & Secret Management"
+      "User Authentication & Route Protection",
+      "Role-Based Access Control (RBAC)",
+      "Stripe & SSLCommerz Payment Integration",
+      "Payment Verification & Security Best Practices"
     ],
-    "badge": "Production Ready",
+    "badge": "Security & Payments",
     "is_visible": 1,
     "display_order": 5
   },
   {
     "id": 6,
-    "title": "Performance & SEO Optimization",
-    "slug": "performance-seo-optimization",
-    "description": "Supercharging web application loading speed, Lighthouse audit scores, SEO meta configurations, asset compression, and Core Web Vitals compliance.",
+    "title": "AI-Assisted Software Engineering",
+    "slug": "ai-assisted-software-engineering",
+    "description": "Leveraging modern AI-assisted engineering tools (ChatGPT, Cursor, Claude Code) for rapid prototyping, intelligent debugging, code review, performance optimization, and clean maintainable codebases.",
     "icon_name": "Zap",
     "features": [
-      "90+ Lighthouse Score Audits",
-      "Core Web Vitals Optimization",
-      "Asset Minification & Lazy Loading",
-      "Search Engine Friendly Meta Tags"
+      "AI-Assisted Development & Debugging",
+      "AI API Integrations in Web Apps",
+      "Clean Code & Scalable Architecture",
+      "Dashboard, LMS & SaaS Development"
     ],
-    "badge": "Speed Boost",
+    "badge": "Modern Engineering",
     "is_visible": 1,
     "display_order": 6
   }
