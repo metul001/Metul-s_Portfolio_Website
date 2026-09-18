@@ -16,10 +16,11 @@ A responsive personal portfolio built with React, TypeScript, Vite, CSS, React T
 
 - Home / Hero
 - About Me
+- Services & Capabilities
 - Experience
 - Projects
 - Education
-- Highlights
+- Highlights & Achievements
 - Skills & Interactive Technology Stack Builder
 - Contact
 - Responsive Footer

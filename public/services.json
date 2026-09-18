@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Full-Stack Web Development",
+    "slug": "full-stack-web-development",
+    "description": "End-to-end web applications crafted with modern React/Next.js frontends and robust Node.js/Express & MySQL backends. Optimized for lightning performance and responsive mobile-first UX.",
+    "icon_name": "Code",
+    "features": [
+      "Custom Single Page Applications (SPA)",
+      "Server-Side Rendering (SSR) & Next.js",
+      "Interactive State Management",
+      "Clean Modular Code Architecture"
+    ],
+    "badge": "Most Popular",
+    "is_visible": 1,
+    "display_order": 1
+  },
+  {
+    "id": 2,
+    "title": "Custom RESTful & GraphQL APIs",
+    "slug": "custom-api-development",
+    "description": "Design and implementation of secure, high-throughput REST and GraphQL APIs with JWT authentication, role-based authorization, rate limiting, and comprehensive endpoint documentation.",
+    "icon_name": "Server",
+    "features": [
+      "Secure Token & JWT Authentication",
+      "CRUD Operations & Business Logic",
+      "Third-Party API Integrations",
+      "Postman & OpenAPI Documentation"
+    ],
+    "badge": "Core Backend",
+    "is_visible": 1,
+    "display_order": 2
+  },
+  {
+    "id": 3,
+    "title": "Database Architecture & MySQL Optimization",
+    "slug": "database-architecture-mysql",
+    "description": "Relational database schema design (MySQL / MariaDB / PostgreSQL), normalization, indexing strategies, complex SQL queries, migrations, and automated backups.",
+    "icon_name": "Database",
+    "features": [
+      "Relational Schema Modeling (ERDs)",
+      "Query Indexing & Query Tuning",
+      "Data Integrity & Foreign Constraints",
+      "Connection Pooling & Caching"
+    ],
+    "badge": "Data Layer",
+    "is_visible": 1,
+    "display_order": 3
+  },
+  {
+    "id": 4,
+    "title": "Modern UI/UX & Responsive Design",
+    "slug": "ui-ux-responsive-design",
+    "description": "Translating Figma & Penpot designs into pixel-perfect, accessible, and responsive user interfaces with fluid animations, micro-interactions, and harmonic color themes.",
+    "icon_name": "Layout",
+    "features": [
+      "Mobile-First Responsive Layouts",
+      "Interactive Micro-Animations",
+      "Accessible HTML5 & Modern CSS3",
+      "Dark / Light Theme Integration"
+    ],
+    "badge": "Design & Code",
+    "is_visible": 1,
+    "display_order": 4
+  },
+  {
+    "id": 5,
+    "title": "Cloud Deployment & DevOps Setup",
+    "slug": "cloud-deployment-devops",
+    "description": "Containerizing full-stack apps with Docker, configuring cloud environments (Vercel, Render, AWS, VPS), and setting up continuous deployment pipelines with Git & GitHub Actions.",
+    "icon_name": "Cloud",
+    "features": [
+      "Docker Containerization",
+      "Vercel / Netlify / Render Deployments",
+      "CI/CD GitHub Actions Automation",
+      "Environment & Secret Management"
+    ],
+    "badge": "Production Ready",
+    "is_visible": 1,
+    "display_order": 5
+  },
+  {
+    "id": 6,
+    "title": "Performance & SEO Optimization",
+    "slug": "performance-seo-optimization",
+    "description": "Supercharging web application loading speed, Lighthouse audit scores, SEO meta configurations, asset compression, and Core Web Vitals compliance.",
+    "icon_name": "Zap",
+    "features": [
+      "90+ Lighthouse Score Audits",
+      "Core Web Vitals Optimization",
+      "Asset Minification & Lazy Loading",
+      "Search Engine Friendly Meta Tags"
+    ],
+    "badge": "Speed Boost",
+    "is_visible": 1,
+    "display_order": 6
+  }
+]

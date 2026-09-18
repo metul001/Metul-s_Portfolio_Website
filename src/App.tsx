@@ -11,16 +11,8 @@ import Achievements from './Achievements'
 import Technologies from './Technologies'
 import Contact from './Contact'
 import Footer from './Footer'
-import AuthModal from './admin/AuthModal'
-import AdminDashboard from './admin/AdminDashboard'
 import type { Technology } from './TechnologyCard'
 import './App.css'
-
-interface AdminUser {
-  id: number
-  email: string
-  role: string
-}
 
 export default function App() {
   const [technologies, setTechnologies] = useState<Technology[]>([])
@@ -30,35 +22,23 @@ export default function App() {
   const [servicesLoading, setServicesLoading] = useState(true)
   const [error, setError] = useState('')
 
-  // Admin Auth State
-  const [token, setToken] = useState<string | null>(() => localStorage.getItem('devstack_admin_token'))
-  const [adminUser, setAdminUser] = useState<AdminUser | null>(() => {
-    const saved = localStorage.getItem('devstack_admin_user')
-    return saved ? JSON.parse(saved) : null
-  })
-
-  // Modals
-  const [authModalOpen, setAuthModalOpen] = useState(false)
-  const [adminDashboardOpen, setAdminDashboardOpen] = useState(false)
-
   // Fetch Technologies & Services
   const fetchData = useCallback(async () => {
     try {
-      const headers: HeadersInit = {}
-      const savedToken = localStorage.getItem('devstack_admin_token')
-      if (savedToken) {
-        headers['Authorization'] = `Bearer ${savedToken}`
-      }
-
-      // 1. Fetch Techs (all for admin, visible for public)
-      const techUrl = savedToken ? '/api/technologies?all=true' : '/api/technologies'
-      const techRes = await fetch(techUrl, { headers })
-
-      if (techRes.ok) {
-        const techData = await techRes.json()
-        setTechnologies(techData)
-      } else {
-        // Fallback to static technologies.json if server is still starting
+      // 1. Fetch Technologies
+      try {
+        const techRes = await fetch('/api/technologies')
+        if (techRes.ok) {
+          const techData = await techRes.json()
+          setTechnologies(techData)
+        } else {
+          const fallback = await fetch('/technologies.json')
+          if (fallback.ok) {
+            const fallbackData = await fallback.json()
+            setTechnologies(fallbackData)
+          }
+        }
+      } catch {
         const fallback = await fetch('/technologies.json')
         if (fallback.ok) {
           const fallbackData = await fallback.json()
@@ -67,14 +47,27 @@ export default function App() {
       }
 
       // 2. Fetch Services
-      const servUrl = savedToken ? '/api/services?all=true' : '/api/services'
-      const servRes = await fetch(servUrl, { headers })
-      if (servRes.ok) {
-        const servData = await servRes.json()
-        setServices(servData)
+      try {
+        const servRes = await fetch('/api/services')
+        if (servRes.ok) {
+          const servData = await servRes.json()
+          setServices(servData)
+        } else {
+          const fallbackServ = await fetch('/services.json')
+          if (fallbackServ.ok) {
+            const fallbackServData = await fallbackServ.json()
+            setServices(fallbackServData)
+          }
+        }
+      } catch {
+        const fallbackServ = await fetch('/services.json')
+        if (fallbackServ.ok) {
+          const fallbackServData = await fallbackServ.json()
+          setServices(fallbackServData)
+        }
       }
     } catch {
-      setError('Could not connect to database API. Retrying...')
+      setError('Could not load portfolio data.')
     } finally {
       setLoading(false)
       setServicesLoading(false)
@@ -84,27 +77,6 @@ export default function App() {
   useEffect(() => {
     fetchData()
   }, [fetchData])
-
-  // Login handler
-  function handleLoginSuccess(newToken: string, user: AdminUser) {
-    setToken(newToken)
-    setAdminUser(user)
-    localStorage.setItem('devstack_admin_token', newToken)
-    localStorage.setItem('devstack_admin_user', JSON.stringify(user))
-    fetchData()
-    setAdminDashboardOpen(true)
-  }
-
-  // Logout handler
-  function handleLogout() {
-    setToken(null)
-    setAdminUser(null)
-    localStorage.removeItem('devstack_admin_token')
-    localStorage.removeItem('devstack_admin_user')
-    setAdminDashboardOpen(false)
-    toast.info('Logged out from admin panel.')
-    fetchData()
-  }
 
   function addToStack(technology: Technology) {
     const alreadyAdded = selected.some((item) => item.id === technology.id)
@@ -142,12 +114,7 @@ export default function App() {
 
   return (
     <>
-      <Navbar
-        adminUser={adminUser}
-        onOpenAuthModal={() => setAuthModalOpen(true)}
-        onOpenAdminDashboard={() => setAdminDashboardOpen(true)}
-        onLogout={handleLogout}
-      />
+      <Navbar />
 
       <main>
         <Hero />
@@ -161,7 +128,7 @@ export default function App() {
         {loading ? (
           <div className="loading-state">
             <div className="spinner"></div>
-            <p>Loading technologies from MySQL database...</p>
+            <p>Loading technologies...</p>
           </div>
         ) : error && publicTechnologies.length === 0 ? (
           <div className="error-state">{error}</div>
@@ -179,25 +146,6 @@ export default function App() {
       </main>
 
       <Footer />
-
-      {/* Admin Auth Modal (Login & Forgot Password) */}
-      <AuthModal
-        isOpen={authModalOpen}
-        onClose={() => setAuthModalOpen(false)}
-        onLoginSuccess={handleLoginSuccess}
-      />
-
-      {/* Admin Dashboard Panel */}
-      <AdminDashboard
-        isOpen={adminDashboardOpen}
-        onClose={() => setAdminDashboardOpen(false)}
-        adminUser={adminUser}
-        token={token}
-        technologies={technologies}
-        services={services}
-        onRefreshData={fetchData}
-        onLogout={handleLogout}
-      />
 
       <ToastContainer position="top-right" autoClose={2200} />
     </>
