@@ -13,11 +13,9 @@ export type Technology = {
 
 type Props = {
   technology: Technology
-  isAdded: boolean
-  onAdd: (technology: Technology) => void
 }
 
-export default function TechnologyCard({ technology, isAdded, onAdd }: Props) {
+export default function TechnologyCard({ technology }: Props) {
   return (
     <article className="technology-card">
       <div className="card-top">
@@ -33,14 +31,6 @@ export default function TechnologyCard({ technology, isAdded, onAdd }: Props) {
         <span>{technology.difficulty}</span>
         <span className="rating">★ {technology.rating}</span>
       </div>
-
-      <button
-        className={isAdded ? 'add-button added' : 'add-button'}
-        onClick={() => onAdd(technology)}
-        disabled={isAdded}
-      >
-        {isAdded ? '✓ Added to Stack' : 'Add to Stack'}
-      </button>
     </article>
   )
 }

@@ -1,5 +1,4 @@
 import { useEffect, useState, useCallback } from 'react'
-import { ToastContainer, toast } from 'react-toastify'
 import Navbar from './Navbar'
 import Hero from './Hero'
 import About from './About'
@@ -17,7 +16,6 @@ import './App.css'
 export default function App() {
   const [technologies, setTechnologies] = useState<Technology[]>([])
   const [services, setServices] = useState<ServiceItem[]>([])
-  const [selected, setSelected] = useState<Technology[]>([])
   const [loading, setLoading] = useState(true)
   const [servicesLoading, setServicesLoading] = useState(true)
   const [error, setError] = useState('')
@@ -78,38 +76,7 @@ export default function App() {
     fetchData()
   }, [fetchData])
 
-  function addToStack(technology: Technology) {
-    const alreadyAdded = selected.some((item) => item.id === technology.id)
-
-    if (alreadyAdded) {
-      toast.warning(`${technology.name} is already in your stack.`)
-      return
-    }
-
-    setSelected([...selected, technology])
-    toast.success(`${technology.name} added to your stack.`)
-  }
-
-  function removeFromStack(id: string) {
-    const item = selected.find((technology) => technology.id === id)
-    setSelected(selected.filter((technology) => technology.id !== id))
-
-    if (item) {
-      toast.info(`${item.name} removed from your stack.`)
-    }
-  }
-
-  function removeAll() {
-    if (selected.length === 0) {
-      toast.warning('Your stack is already empty.')
-      return
-    }
-
-    setSelected([])
-    toast.info('All technologies removed from your stack.')
-  }
-
-  // Filter public visible technologies for the interactive stack builder
+  // Filter public visible technologies
   const publicTechnologies = technologies.filter((t) => t.is_visible !== 0 && t.is_visible !== false)
 
   return (
@@ -133,21 +100,13 @@ export default function App() {
         ) : error && publicTechnologies.length === 0 ? (
           <div className="error-state">{error}</div>
         ) : (
-          <Technologies
-            technologies={publicTechnologies}
-            selected={selected}
-            onAdd={addToStack}
-            onRemove={removeFromStack}
-            onRemoveAll={removeAll}
-          />
+          <Technologies technologies={publicTechnologies} />
         )}
 
         <Contact />
       </main>
 
       <Footer />
-
-      <ToastContainer position="top-right" autoClose={2200} />
     </>
   )
 }

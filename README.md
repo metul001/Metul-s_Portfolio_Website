@@ -1,6 +1,6 @@
 # Mahir Faysal Metul — Portfolio Website
 
-A responsive personal portfolio built with React, TypeScript, Vite, CSS, React Toastify, and JSON data.
+A responsive personal portfolio built with React, TypeScript, Vite, CSS, and JSON data.
 
 ## About
 
@@ -23,7 +23,7 @@ A responsive personal portfolio built with React, TypeScript, Vite, CSS, React T
 - Projects
 - Education
 - Highlights & Achievements
-- Skills & Interactive Technology Stack Builder
+- Skills & Technologies
 - Contact
 - Responsive Footer
 
@@ -32,9 +32,8 @@ A responsive personal portfolio built with React, TypeScript, Vite, CSS, React T
 1. Complete personal portfolio layout with section navigation.
 2. Internship, project, education, and profile highlight sections.
 3. Technology cards loaded from JSON using the A5 Dev Stack data.
-4. Interactive Add to Stack feature with duplicate protection and remove functionality.
-5. React Toastify notifications and loading state.
-6. Responsive design for desktop, tablet, and mobile screens.
+4. Technology cards loaded from JSON with loading state.
+5. Responsive design for desktop, tablet, and mobile screens.
 
 ## Technologies Used
 
@@ -42,7 +41,6 @@ A responsive personal portfolio built with React, TypeScript, Vite, CSS, React T
 - TypeScript
 - Vite
 - CSS
-- React Toastify
 - JSON
 
 ## Run Locally
