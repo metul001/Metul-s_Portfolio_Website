@@ -19,7 +19,7 @@ export default function Navbar() {
         </button>
 
         <a href="#home" className="portfolio-brand" onClick={closeMenu}>
-          MFM<span>.</span>
+          Mahir Faysal Metul<span>.</span>
         </a>
 
         <div className="nav-links">

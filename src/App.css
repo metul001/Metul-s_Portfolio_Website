@@ -24,13 +24,14 @@
 .navbar {
   min-height: 74px;
   display: grid;
-  grid-template-columns: 150px 1fr 150px;
+  grid-template-columns: auto 1fr 150px;
   align-items: center;
   gap: 20px;
 }
 
 .portfolio-brand {
   width: fit-content;
+  white-space: nowrap;
   font-size: 25px;
   font-weight: 900;
   letter-spacing: -1px;
@@ -929,7 +930,7 @@
 
 @media (max-width: 1050px) {
   .navbar {
-    grid-template-columns: 120px 1fr 120px;
+    grid-template-columns: auto 1fr 120px;
   }
 
   .nav-links {
@@ -961,6 +962,7 @@
 
   .navbar .portfolio-brand {
     justify-self: center;
+    font-size: 20px;
   }
 
   .nav-links {
